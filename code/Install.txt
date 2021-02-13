@@ -1,0 +1,38 @@
+Please use Anaconda for Python: https://www.anaconda.com/
+
+Remark: I worked under Linux so it could be that you have to adapt the
+code when you whant to use Windows.
+
+================================= DICOM =================================
+gen_cube.py needs the following libraries: pydicom
+conda install -c conda-forge pydicom
+
+Remark: I used conda environments to hold the installation clean. I have used
+the conda environment VTK to install pydicom
+
+================================= Mayavi2 =================================
+analyse3d.py needs the following libraries: mayavi
+conda install -c anaconda mayavi
+
+Remark: mayavi2 is a large package and on the basoe of VTK, please install
+it together with pydicom in one conda environment (I used VTK)
+
+================================= Tensorflow =================================
+ImageGenerator2-VGG16.py needes th following libraries:  sklearn, tensorflow,
+joblib, pyyaml
+
+conda install -c conda-forge tensorflow
+conda install -c conda-forge scikit-learn
+conda install -c conda-forge joblib 
+conda install -c conda-forge pyyaml
+
+Remark: it should be installed into one conda environment (I used TF)
+================================= gradCam =================================
+the grad-Cam algorithm needs the following additional libraries: cv2
+conda install -c conda-forge cv2
+
+Remark: please use the TF conda environment TF again to install cv2
+
+
+
+

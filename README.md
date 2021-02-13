@@ -2,16 +2,15 @@
 Same scripts to handle CT Images using deep learning
 
 The Python programs are used to investigate soil structures from CT images.
-They are part of the paper:
-
-Use of Deep Learning for structural analysis of CT-images of soil samples
+They are part of the RSOS paper:  Ralf Wieland et al. "Use of Deep Learning for
+structural analysis of CT-images of soil samples" 
 
 All the data and programs used here are open source and were 
 created with the help of open source software. A detailed summary of the installation steps can be found in Install.txt.
 
-To make it easier for the reader to understand, the programs have been designed to build the data and the model step by step from an original CT data set. We proceed as follows:
+To make it easier for the reader to understand, the programs have been designed to build the data and the model step by step from an original CT data set. We proceed as follows: Please download the open source data from Dryad (see the Paper). The size is about 8GB, please be patient during the download. 
 
-Please download the *.tgz and unpack them (tar -zxvf 3086.tgz). Thne you have directories with the dataset in DICOM format.
+Please download the *.tgz and unpack them (tar -zxvf data1.tgz and tar -zxvf data2.tgz). Then you have directories with the dataset in DICOM format.
 To read this data and to transfer it into a structure suitable for training neural networks the program gen_cube.py must be called. This is done by passing parameters on the command line. To get an overview of the commands, type:
 
 python gen_cube.py -h
